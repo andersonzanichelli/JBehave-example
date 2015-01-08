@@ -5,6 +5,8 @@ A vantagem de utilização deste, é que a escrita do teste fica bem mais simple
 
 Nesse pequeno exemplo foi utilizado o problema da tradução de números decimais para números romanos.
 O conhecedor das regras de negócio escreve o comportamento que ele espera:
+
+```
 NumerosRomanos.story
 Narrative:
 In order to put a number in decimal format
@@ -27,8 +29,12 @@ Examples:
 |300|CCC|
 |2015|MMXV|
 |3000|MMM|
+```
 
 E o desenvolvedor cria o teste baseado nesses compontamentos esperados:
+
+```java
+NumerosRomanosSteps.java
 public class NumerosRomanosSteps {
 	
 	private NumerosRomanos numerosRomanos;
@@ -48,5 +54,5 @@ public class NumerosRomanosSteps {
 		Assert.assertEquals(roman, numerosRomanos.translate());
 	}
 }
-
+```
 Outra grande vantagem que podemos perceber é que a classe de teste não é preenchida com vários casos de testes duplicados com apenas a modificação de váriáveis.
