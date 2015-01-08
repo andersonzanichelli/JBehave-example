@@ -45,12 +45,12 @@ public class NumerosRomanosSteps {
 	}
 
 	@Given("the [number] to translate")
-	public void givenTheNumberToConvert(@Named("number") Integer number) {
+	public void givenTheNumberToTranslate(@Named("number") Integer number) {
 		numerosRomanos = new NumerosRomanos(number);
 	}
 	
 	@Then("the translation is [roman]")
-	public void thenTheResultIs(@Named("roman") String roman) {
+	public void thenTheTranslationIs(@Named("roman") String roman) {
 		Assert.assertEquals(roman, numerosRomanos.translate());
 	}
 }
