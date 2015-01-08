@@ -11,6 +11,7 @@ Examples:
 |number|roman|
 |1|I|
 |3|III|
+|4|IV|
 |5|V|
 |6|VI|
 |7|VII|
@@ -19,3 +20,4 @@ Examples:
 |300|CCC|
 |2015|MMXV|
 |3000|MMM|
+|3999|MMMCMXCIX|
